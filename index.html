@@ -1,14 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <h1>This is Abdu's Website</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <script src="https://kit.fontawesome.com/43cfaf13aa.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="style.css">
 </head>
+
 <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="my1oqem4.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact Me</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul> 
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Abdulrahman Awad</span></h1>
+        </div>
+    </div>
+</div>
+<!-- ----------------about -------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="abdu_image.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Abdulrahman Awad, a passionate software developer with a strong background in computer science. I have a keen interest in artificial intelligence and machine learning. Through my education at Carleton University, I have gained a solid foundation in programming languages such as Python, Java, C, JavaScript, HTML, and CSS. I have also completed various courses and certifications to further enhance my skills. With hands-on experience as a software developer intern at Nokia, I have worked on projects involving Python, Docker, Linux, GitLab, and Robot. I am a dedicated and proactive learner, always seeking new opportunities to expand my knowledge and contribute to innovative projects.
+                </p>
+
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class = "tab-links" onclick="opentab('Education')">Education</p>
+                </div> 
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br><br>Python, Java, C, JavaScript, HTML, CSS</li>
+                        <li><span><br>Tools and Frameworks</span><br><br>- GitLab: Version control and collaborative development.<br><br>- Docker: Creating and deploying containerized applications.<br><br>- VS Code: Integrated development environment (IDE) for efficient coding.<br><br>- IntelliJ: Powerful IDE for Java development.<br><br>- Tkinter: Building intuitive user interfaces for desktop applications.<br><br>- JavaFX: Creating visually appealing UIs for Java applications.<br><br>- GitHub: Code repository and collaboration platform.<br><br>- Robot Framework: Test automation.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Carleton University - Computer Science</span><br><br>- Bachelors Degree: Bachelor of Science in Computer Science.<br><br>-Specialization: A.I and Machine Learning <br><br>- Expected Graduation: 2022 - 2026<br><br>- Grade: Transcript available upon request</li>
+                        <li><span><br>Skills</span><br><br>Throughout my education, I have acquired a strong foundation in computer science principles, algorithms, and data structures. Additionally, I have specialized in A.I and Machine Learning, further expanding my knowledge in these domains. I have successfully completed coursework such as Intro to Python, Java OOP, Discrete Math, University Calculus, and Linear Algebra. These courses have provided me with a solid understanding of fundamental programming concepts and mathematical principles, enhancing my problem-solving abilities and analytical thinking.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Delivery Automation Software Developer Intern at Nokia (May 2023 - Sept 2023): </span><br><br>During my time at Nokia, I had the invaluable opportunity to work as a software developer intern. This experience provided me with hands-on exposure to real-world projects and enhanced my skills in various areas. I actively contributed to projects involving Python, Docker, Linux, GitLab, and Robot. Collaborating with a talented team, I gained practical knowledge in version control, collaborative development, containerized application deployment, and test automation using Robot Framework. The dynamic and fast-paced environment at Nokia allowed me to sharpen my problem-solving abilities and develop a keen eye for detail. This experience not only deepened my understanding of software development but also fostered my passion for creating innovative solutions. I am grateful for the valuable lessons and growth opportunities I gained during my time at Nokia.</li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------Projects------------------------>
+<div id ="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="0cimqoph.png" alt="" class="">
+                <div class="layer">
+                    <h3>Python Turtle Crossing Game</h3>
+                    <p>
+                        
+I developed a captivating turtle crossing game that showcases my proficiency in OOP, event handling, randomization, collision detection, scorekeeping, and game logic. Players control a turtle, guiding it across a busy road while avoiding cars. The game features separate classes for the player, scoreboard, and car manager, ensuring organized and reusable code. With dynamic car generation, collision detection, and level advancement, the game offers an exciting and challenging experience. Timing mechanisms and a game loop ensure smooth gameplay and real-time player interaction.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Screenshot 2023-05-22 215741.png" alt="" class="">
+                <div class="layer">
+                    <h3>Password Manager</h3>
+                    <p>
+                        I created a Password Manager with a Tkinter GUI, demonstrating my programming skills. It generates secure passwords and allows users to store website credentials. The Password Generator creates random passwords using a combination of letters, numbers, and symbols. Users can save their website, email, and password details, which are stored in a file. The user interface is intuitive, with entry fields and buttons for easy interaction. The application showcases my skills in Tkinter GUI development, password generation, input validation, and data storage.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>    
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Screenshot 2023-05-22 215707.png" alt="" class="">
+                <div class="layer">
+                    <h3>Interactive Pong Game</h3>
+                    <p>I developed a Pong game using Python's turtle module, showcasing my programming skills. The game features two paddles controlled by the players and a ball that bounces off the paddles and walls. The score is displayed on a scoreboard, with points awarded when the opponent misses the ball. The game loop ensures smooth animation and responsiveness. The code includes separate files for the paddle, ball, and scoreboard classes, demonstrating modular programming. This project demonstrates my skills in object-oriented programming, collision detection, animation, and user input handling.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">More Projects</a>
+    </div>
+
+</div>
 
 
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname.toLowerCase()).classList.add("active-tab");
+    }
+
+</script>
 </body>
-
-
 </html>
