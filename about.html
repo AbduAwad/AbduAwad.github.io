@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="transitions.css">
+    <script src="https://kit.fontawesome.com/43cfaf13aa.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/43cfaf13aa.js" crossorigin="anonymous"></script>
+</head>
+
+<div id="about">
+    <div class="container">
+        <nav>
+            <img src="newlogo.png" class="logo">    <!-- just a black logo -->
+            <ul>
+                <li><a href="index.html" class="transition-link">Home</a></li>
+                <li><a href="about.html" class="transition-link">About Me</a></li>
+                <li><a href="resume.html" class="transition-link">Resume</a></li>
+                <li><a href="projects.html" class="transition-link">Projects</a></li>
+                <li><a href="contact.html" class="transition-link">Contact</a></li>
+            </ul> 
+        </nav> 
+        <div class="row">
+            <div class="about-col-1">
+                <img src="abdu_image.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                
+                <p>I am Abdulrahman Awad, a passionate software developer with a strong background in computer science. I have a keen interest in artificial intelligence and machine learning. Through my education at Carleton University, I have gained a solid foundation in programming languages such as Python, Java, C, JavaScript, HTML, and CSS. I have also completed various courses and certifications to further enhance my skills. With hands-on experience as a software developer intern at Nokia, I have worked on projects involving Python, Docker, Linux, GitLab, and Robot. I am a dedicated and proactive learner, always seeking new opportunities to expand my knowledge and contribute to innovative projects.
+                </p>
+
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class = "tab-links" onclick="opentab('Education')">Education</p>
+                </div> 
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br><br>Python, Java, C, JavaScript, HTML, CSS</li>
+                        <li><span><br>Tools and Frameworks</span><br><br>- GitLab: Version control and collaborative development.<br><br>- Docker: Creating and deploying containerized applications.<br><br>- VS Code: Integrated development environment (IDE) for efficient coding.<br><br>- IntelliJ: Powerful IDE for Java development.<br><br>- Tkinter: Building intuitive user interfaces for desktop applications.<br><br>- JavaFX: Creating visually appealing UIs for Java applications.<br><br>- GitHub: Code repository and collaboration platform.<br><br>- Robot Framework: Test automation.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Carleton University - Computer Science<br><br></span>
+                            <img src="cu-ravens.png" alt="Image Description"><br><br>- Bachelors Degree: Bachelor of Science in Computer Science.<br><br>-Specialization: A.I and Machine Learning <br><br>- Expected Graduation: 2022 - 2026<br><br>- Grade: 12/12 cgpa - Transcript available upon request</li>
+                        <li><span><br>Skills</span><br><br>Throughout my education, I have acquired a strong foundation in computer science principles, algorithms, and data structures. Additionally, I have specialized in A.I and Machine Learning, further expanding my knowledge in these domains. I have successfully completed coursework such as Intro to Python, Java OOP, Discrete Math, University Calculus, and Linear Algebra. These courses have provided me with a solid understanding of fundamental programming concepts and mathematical principles, enhancing my problem-solving abilities and analytical thinking.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Delivery Automation Software Developer Intern at Nokia (May 2023 - Sept 2023): <br><br></span>
+                            <img src="Nokia-Logo.png" alt="Image Description">
+                            <br><br>During my time at Nokia, I had the invaluable opportunity to work as a software developer intern. This experience provided me with hands-on exposure to real-world projects and enhanced my skills in various areas. I actively contributed to projects involving Python, Docker, Linux, GitLab, and Robot. Collaborating with a talented team, I gained practical knowledge in version control, collaborative development, containerized application deployment, and test automation using Robot Framework. The dynamic and fast-paced environment at Nokia allowed me to sharpen my problem-solving abilities and develop a keen eye for detail. This experience not only deepened my understanding of software development but also fostered my passion for creating innovative solutions. I am grateful for the valuable lessons and growth opportunities I gained during my time at Nokia.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname.toLowerCase()).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('.transition-link');
+
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            var target = e.target.getAttribute('href');
+            var body = document.querySelector('body');
+
+            body.classList.add('transition-fade-out');
+
+            setTimeout(function() {
+                window.location.href = target;
+            }, 500);
+        });
+    });
+});
+
+</script>
+
+
+</body>
+</html>

@@ -128,7 +128,7 @@ nav ul li a:hover::after{
 
 .tab-links{
     margin-right:50px ;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     position: relative
@@ -158,7 +158,8 @@ nav ul li a:hover::after{
 .tab-contents ul li span{
 
     color: var(--blue);
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bold;
     
 }
 
@@ -170,13 +171,23 @@ nav ul li a:hover::after{
     display: block;
 }
 
+#education img {
+    width: 50px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+}
+#experience img {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+
 /* ----------------resume-------------- */
 #resume {
     padding: 50px 0;
   }
   
   .resume-container {
-    text-align: center;
+    text-align: left;
     margin: 0 auto; /* Center the container horizontally */
     max-width: 850px; /* Set a maximum width for better control */
   }
@@ -258,7 +269,86 @@ nav ul li a:hover::after{
 /* 
 --------------portfolio--------------- */
 
+#projects{
+    padding:50px 0;
+}
 
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transforom 0.2s;
+}
+
+.layer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 16px;
+    transition: height 0.2s;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--gradient));
+    border-radius: 10px;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+
+.work:hover .layer{
+    height: 100%;
+    
+}
+
+.work.initial .layer {
+    height: 100%;
+}
+
+
+.work .initial-overlay {
+    height: 100%;
+    transition: height 0.2s;
+}
 
 .btn{
     display: block;
@@ -279,6 +369,7 @@ nav ul li a:hover::after{
 /* ------------------contact------------- */
 .contact-left{
     flex-basis: 35%;
+    
 
 }
 .contact-right{
@@ -286,10 +377,10 @@ nav ul li a:hover::after{
 
 }
 
-.contact-left p{
-    margin-top: 30px;
-
-}
+.contact-left p .fa-solid.fa-paper-plane {
+    margin-top: 270px;
+  }
+  
 
 .contact-left p i{
     margin-top: 10px;
@@ -299,7 +390,7 @@ nav ul li a:hover::after{
 }
 
 .social-icons {
-    margin-top: 100px;
+    margin-top: 450px;
     text-align: right;
   }
   
@@ -331,7 +422,7 @@ nav ul li a:hover::after{
 
 .btn.btn2:hover{
     display: inline-block;
-    background: var(--blue);
+    background:   var(--blue);;
 }
 
 .contact-right form{
@@ -371,7 +462,19 @@ form .btn2{
     color: var(--blue);
 }
 
+/* ---------------------transition-code-------------- */
+.transition-fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
 
-/* ---------------- css for small screens ---------------------- */
-
-
+  
+  .transition-fade.active {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  

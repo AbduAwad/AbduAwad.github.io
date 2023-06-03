@@ -11,9 +11,9 @@
     <script src="https://kit.fontawesome.com/43cfaf13aa.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-<div id="header">
-    <div class="container">
+<!-- #-------------------------Resume-------------------------- -->
+<div id ="resume">
+    <div class="resume-container">
         <nav>
             <img src="newlogo.png" class="logo">    <!-- just a black logo -->
             <ul>
@@ -22,36 +22,33 @@
                 <li><a href="resume.html" class="transition-link">Resume</a></li>
                 <li><a href="projects.html" class="transition-link">Projects</a></li>
                 <li><a href="contact.html" class="transition-link">Contact</a></li>
-            </ul> 
-        </nav>
-        <div class="header-text">
-            <p>Computer Science</p>
-            <h1>Hi, I'm <span>Abdulrahman Awad</span></h1>
+            </ul>  
+        </nav> 
+        <h1 class="sub-title">Resume</h1>
+        <div class="resume">
+            <iframe src="Tech_Resume_May24_2023.pdf" width="850px" height="1150px" /></iframe>
         </div>
     </div>
-</div>
+</div> 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var links = document.querySelectorAll('.transition-link');
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-        links.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
 
-                var target = e.target.getAttribute('href');
-                var content = document.querySelector('body');
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
 
-                content.classList.add('transition-fade');
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname.toLowerCase()).classList.add("active-tab");
+    }
 
-                setTimeout(function() {
-                    window.location.href = target;
-                }, 500);
-            });
-        });
-    });
 </script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('.transition-link');

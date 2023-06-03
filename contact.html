@@ -11,8 +11,9 @@
     <script src="https://kit.fontawesome.com/43cfaf13aa.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-<div id="header">
+
+<!-- ------------------contact------------------------- -->
+<div id ="contact">
     <div class="container">
         <nav>
             <img src="newlogo.png" class="logo">    <!-- just a black logo -->
@@ -22,36 +23,46 @@
                 <li><a href="resume.html" class="transition-link">Resume</a></li>
                 <li><a href="projects.html" class="transition-link">Projects</a></li>
                 <li><a href="contact.html" class="transition-link">Contact</a></li>
-            </ul> 
+            </ul>  
         </nav>
-        <div class="header-text">
-            <p>Computer Science</p>
-            <h1>Hi, I'm <span>Abdulrahman Awad</span></h1>
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>abdulrahmansawad@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>613-410-8305</p>        
+                <a href="Tech_Resume_May_21_2023.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abdulrahmansawad/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    <a href="https://www.instagram.com/_abduawad/"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+                    <a href="https://github.com/AbduAwad"><i class="fa-brands fa-github fa-3x"></i></a>
+                    <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord fa-3x"></i></a>
+                  </div>
+                  
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var links = document.querySelectorAll('.transition-link');
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-        links.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
 
-                var target = e.target.getAttribute('href');
-                var content = document.querySelector('body');
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
 
-                content.classList.add('transition-fade');
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname.toLowerCase()).classList.add("active-tab");
+    }
 
-                setTimeout(function() {
-                    window.location.href = target;
-                }, 500);
-            });
-        });
-    });
 </script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('.transition-link');
