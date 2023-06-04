@@ -1,5 +1,5 @@
 :root {
-    --blue: #4C39FB;
+    --blue: #DC143C;
     --white: #fff;
 }
 
@@ -84,6 +84,17 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: var(--blue);
+    transform: translate(-50%,-50%);
+    text-shadow: 1px 1px 1px #800000,
+                 1px 2px 1px #800000,
+                 1px 3px 1px #800000,
+                 1px 4px 1px #800000,
+                 1px 5px 1px #800000,
+                 1px 6px 1px #800000,
+                 1px 7px 1px #800000,
+                 1px 8px 1px #800000,
+                 1px 9px 1px #800000,
+                 1px 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /*-----------------about-----------------*/
@@ -97,6 +108,12 @@ nav ul li a:hover::after{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
+}
+
+.fa-solid.fa-angles-right{
+    font-size: 12px;
+    color: var(--blue);
+    margin-right: 5px;
 }
 
 .about-col-1{
@@ -114,12 +131,14 @@ nav ul li a:hover::after{
     flex-basis: 68%;
 }
 
+/* ------ This is the css for all titles other than home pg------ */
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color:var(--white)
+    color:  var(--white)
+    
 }
-
+/* -------------------------------------------------------------- */
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -156,11 +175,9 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-
-    color: var(--blue);
+    color:  #C9C9C9;
     font-size: 18px;
     font-weight: bold;
-    
 }
 
 .tab-contents{
@@ -172,14 +189,16 @@ nav ul li a:hover::after{
 }
 
 #education img {
-    width: 50px; /* Set the desired width */
+    width: 180px; /* Set the desired width */
     height: auto; /* Maintain the aspect ratio */
+    float: right;
 }
+
 #experience img {
     width: 100px; /* Set the desired width */
     height: auto; /* Maintain the aspect ratio */
-  }
-  
+   
+}
 
 /* ----------------resume-------------- */
 #resume {
@@ -344,7 +363,6 @@ nav ul li a:hover::after{
     height: 100%;
 }
 
-
 .work .initial-overlay {
     height: 100%;
     transition: height 0.2s;
@@ -395,7 +413,7 @@ nav ul li a:hover::after{
   }
   
   .social-icons i {
-    font-size: 5rem;
+    font-size: rem;
     margin: 0 30px;
   }
   
@@ -403,7 +421,7 @@ nav ul li a:hover::after{
 .social-icons a{
     margin-top: 70px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
