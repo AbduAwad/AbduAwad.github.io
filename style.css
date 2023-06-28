@@ -440,7 +440,7 @@ nav ul li a:hover::after{
 
 .btn.btn2:hover{
     display: inline-block;
-    background:   var(--blue);;
+    background:   var(--blue);
 }
 
 .contact-right form{
