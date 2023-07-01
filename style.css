@@ -1,6 +1,7 @@
 :root {
-    --blue: #DC143C;
-    --white: #fff;
+    --main_theme_color: #66FCF1;
+    --text_color: #FFF;
+    --background_color: #252740;
 }
 
 
@@ -12,8 +13,8 @@
 }
 
 body{
-    background: #080808;
-    color: var(--white);
+    background: var(--background_color);
+    color: var(--text_color);
 }
 
 html{
@@ -21,6 +22,7 @@ html{
 }
 
 #header{
+    justify-content: flex-end;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -51,7 +53,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color: var(--white);
+    color: var(--text_color);
     text-decoration: none;
     font-size: 18;
     position: relative;
@@ -61,7 +63,7 @@ nav ul li a::after{
     content: '';
     width: 40%;
     height: 3px;
-    background: var(--blue);
+    background: var(--main_theme_color);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -83,26 +85,64 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: var(--blue);
+    color: var(--main_theme_color);
     transform: translate(-50%,-50%);
-    text-shadow: 1px 1px 1px #800000,
-                 1px 2px 1px #800000,
-                 1px 3px 1px #800000,
-                 1px 4px 1px #800000,
-                 1px 5px 1px #800000,
-                 1px 6px 1px #800000,
-                 1px 7px 1px #800000,
-                 1px 8px 1px #800000,
-                 1px 9px 1px #800000,
-                 1px 20px 40px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px #000000,
+                2px 2px 1px #000000,
+                3px 3px 1px #000000,
+                4px 4px 1px #000000,
+                5px 5px 1px #000000,
+                6px 6px 1px #000000,
+                7px 7px 1px #000000,
+                8px 8px 1px #000000,
+                1px 9px 1px #000000,
+                1px 10px 1px #000000,
+                1px 11px 1px #000000,
+                1px 13px 1px #000000,
+                1px 14px 1px #000000,
+                1px 15px 1px #000000,
+                1px 16px 1px #000000,
+                1px 17px 1px #000000,
+                1px 18px 1px #000000,
+                1px 19px 1px #000000,
+                1px 20px 1px #000000,
+                 1px 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 /*-----------------about-----------------*/
 #about{
     padding: 80px 0;
-    color: #ababab
+    color: #FFF;
 }
 
+h1.sub-title {
+    color: var(--main_theme_color); /* Adjust the color to your preference */
+    text-shadow: 1px 1px 1px #000000,
+                 2px 2px 1px #000000,
+                 3px 3px 1px #000000,
+                 4px 4px 1px #000000,
+                 5px 5px 1px #000000,
+                 6px 6px 1px #000000,
+                 7px 7px 1px #000000,
+                 8px 8px 1px #000000,
+                 1px 9px 1px #000000,
+                 1px 10px 1px #000000,
+                 1px 11px 1px #000000,
+                 1px 13px 1px #000000,
+                 1px 14px 1px #000000,
+                 1px 15px 1px #000000,
+                 1px 16px 1px #000000,
+                 1px 17px 1px #000000,
+                 1px 18px 1px #000000,
+                 1px 19px 1px #000000,
+                 1px 20px 1px #000000,
+                 1px 21px 1px #000000,
+                 1px 23px 1px #000000,
+                 1px 24px 1px #000000,
+                 1px 25px 1px #000000,
+                 1px 20px 40px rgba(0, 0, 0, 0.6);
+}
+  
 .row{
     display: flex;
     justify-content: space-around;
@@ -112,7 +152,7 @@ nav ul li a:hover::after{
 
 .fa-solid.fa-angles-right{
     font-size: 12px;
-    color: var(--blue);
+    color: var(--main_theme_color);
     margin-right: 5px;
 }
 
@@ -135,7 +175,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color:  var(--white)
+    color:  var(--text_color)
     
 }
 /* -------------------------------------------------------------- */
@@ -158,7 +198,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: var(--blue);
+    background: var(--main_theme_color);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -267,13 +307,14 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: var(--blue);
+    background: var(--main_theme_color);
+    color: #000000;
     transform: translate3d(-10px,-10px,-10px);
 }
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -281,7 +322,8 @@ nav ul li a:hover::after{
   }
   
   .button:hover {
-    background-color: var(--blue);
+    color: #000000;
+    background-color: var(--main_theme_color);
   }
   
 
@@ -328,7 +370,7 @@ nav ul li a:hover::after{
     transition: height 0.2s;
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--gradient));
+    background: var(--background_color);
     border-radius: 10px;
 }
 
@@ -339,11 +381,11 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: var(--blue);
+    color: var(--background_color);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: var(--white);
+    background: var(--background_color);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -372,16 +414,17 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--main_theme_color);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--text_color);
     transition: 0.2s;
 }
 
 .btn:hover{
-    background: var(--blue);
+    background: var(--main_theme_color);
+    color: #000000;
 }
 
 /* ------------------contact------------- */
@@ -402,7 +445,7 @@ nav ul li a:hover::after{
 
 .contact-left p i{
     margin-top: 10px;
-    color:var(--blue);
+    color:var(--main_theme_color);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -414,14 +457,14 @@ nav ul li a:hover::after{
   
   .social-icons i {
     font-size: rem;
-    margin: 0 30px;
+    margin: 0 8px;
   }
   
 
 .social-icons a{
     margin-top: 70px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
@@ -429,7 +472,7 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color: var(--blue);
+    color: var(--main_theme_color);
     transform: translateY(-5px);
 }
 
@@ -440,7 +483,8 @@ nav ul li a:hover::after{
 
 .btn.btn2:hover{
     display: inline-block;
-    background:   var(--blue);
+    background:   var(--main_theme_color);
+    color: #000000;
 }
 
 .contact-right form{
@@ -455,7 +499,7 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 14px 0;
-    color: var(--white);
+    color: var(--text_color);
     font-size: 16px;
     border-radius: 6px;
 }
@@ -465,6 +509,7 @@ form .btn2{
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
+    color: #000000;
 }
 
 .footer{
@@ -477,7 +522,7 @@ form .btn2{
 }
 
 .footer i{
-    color: var(--blue);
+    color: var(--main_theme_color);
 }
 
 /* ---------------------transition-code-------------- */
