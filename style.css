@@ -187,8 +187,8 @@ h1.sub-title {
 
 .tab-links{
     margin-right:50px ;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 900;
     cursor: pointer;
     position: relative
 }
@@ -206,18 +206,19 @@ h1.sub-title {
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 60%;
 }
 
 .tab-contents ul li{
     list-style: none;
-    margin:10px 0;
+    margin:25px 0;
 }
 
 .tab-contents ul li span{
-    color:  #C9C9C9;
-    font-size: 18px;
+    color:  #FFF;
+    font-size: 20px;
     font-weight: bold;
+    font-family: Montserrat;
 }
 
 .tab-contents{
@@ -424,7 +425,7 @@ h1.sub-title {
 
 .btn:hover{
     background: var(--main_theme_color);
-    color: #000000;
+     color: #000000;
 }
 
 /* ------------------contact------------- */
