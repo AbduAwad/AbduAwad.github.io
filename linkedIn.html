@@ -11,27 +11,33 @@
     <script src="https://kit.fontawesome.com/43cfaf13aa.js" crossorigin="anonymous"></script>
 </head>
 
-<!-- #-------------------------Resume-------------------------- -->
-<div id ="resume">
-    <div class="resume-container">
-        <nav>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="transition-link">Home</a></li>
-                    <li><a href="about.html" class="transition-link">About Me</a></li>
-                    <li><a href="resume.html" class="transition-link">Resume</a></li>
-                    <li><a href="projects.html" class="transition-link">Projects</a></li>
-                    <li><a href="linkedIn.html" class="transition-link">LinkedIn</a></li>
-                    <li><a href="contact.html" class="transition-link">Contact</a></li>
-                </ul> 
-            </nav>
-        </nav> 
-        <h1 class="sub-title">Resume</h1>
-        <div class="resume">
-            <iframe src="Resume.pdf" width="850px" height="1150px" /></iframe>
+<nav>
+    <ul>
+        <span style="margin-right: 550px;"></span>
+        <li><a href="index.html" class="transition-link">Home</a></li>
+        <li><a href="about.html" class="transition-link">About Me</a></li>
+        <li><a href="resume.html" class="transition-link">Resume</a></li>
+        <li><a href="projects.html" class="transition-link">Projects</a></li>
+        <li><a href="linkedIn.html" class="transition-link">LinkedIn</a></li>
+        <li><a href="contact.html" class="transition-link">Contact</a></li>
+    </ul> 
+</nav>
+
+<head>
+    <title>My LinkedIn</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have an external CSS file -->
+</head>
+<body>
+    <div class="center-container">
+        <h1 class="sub-title">My LinkedIn</h1>
+
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="abdulrahmansawad" data-version="v1">
+            <a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/abdulrahmansawad?trk=profile-badge"></a>
         </div>
     </div>
-</div> 
+</body>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
@@ -51,6 +57,7 @@
     }
 
 </script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('.transition-link');

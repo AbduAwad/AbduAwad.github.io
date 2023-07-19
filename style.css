@@ -542,3 +542,18 @@ form .btn2{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
   
+/* Linkdin */
+
+/* Add a CSS class to the container to center it */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Set the container height to occupy the full viewport height */
+}
+
+/* Add margin to push the LinkedIn profile badge down */
+.badge-base {
+    margin-top: 10px; /* Adjust the value as needed for desired spacing */
+}
