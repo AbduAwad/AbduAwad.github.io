@@ -354,7 +354,7 @@ h1.sub-title {
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition: transforom 0.2s;
+    transition: 0.2s;
 }
 
 .layer{
