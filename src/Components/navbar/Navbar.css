@@ -1,0 +1,37 @@
+nav{
+    width: 100%; /* width of the nav bar */
+    background:  transparent; /* background color */
+    color: white; /* text color */
+    padding: 4px 0px; /* padding */
+    position: fixed; /* nav bar will be fixed to the top */
+    top: 0; /* nav bar will be fixed to the top at 0 */
+    left: 0; /* nav bar will be fixed to the left at 0 */
+    display: flex; /* displays content side by side */
+    align-items: center; /* aligns content vertically */
+    justify-content: space-between; /* aligns content horizontally */
+    z-index: 10; /* z-index is used to stack elements on top of each other */
+ }
+
+.logo-container{
+    display: flex; /* displays content side by side */
+    align-items: center; /* aligns content vertically */
+    margin-left: 10px; /* margin */
+}
+
+.logo{
+    width : 30px; /* width of the logo */
+    height: auto;
+}
+
+nav ul li {
+    display: inline-block; /* displays content side by side*/
+    list-style: none; /* removes the bullet points */
+    margin: 5px 20px; /* margin */
+    font-size: 18px; 
+
+}
+
+.name {
+    margin-left: 10px;
+    height: auto;
+}
