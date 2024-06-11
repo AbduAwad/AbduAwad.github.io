@@ -53,3 +53,41 @@ _____
 ### Contributing
 
 If you would like to contribute to the project, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+_____
+
+### Create a React APP using Vite
+
+- Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.
+
+_____
+
+1. create the vite instance
+
+```bash
+npm create vite@latest
+```
+
+2. Enter a project name
+```bash
+Project name: <project-name>
+```
+
+3. Select a framework
+- Select a framework
+```bash
+Select a framework: react
+```
+
+4. Select a variant
+```bash
+Select a variant: Javascript
+```
+_____
+
+- After steps 1-4 are complete, the project will be create in directory project name:
+
+- Navigate into the project directory:
+```bash
+cd <project-name>
+```

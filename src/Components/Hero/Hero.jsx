@@ -15,8 +15,9 @@ const Hero = () => {
                 options={{
                     autoStart: true,
                     loop: true,
-                    delay: 80,
-                    strings: ["Welcome to my portfolio! 🚀 "],
+                    delay: 60,
+                    strings: ["Hi, Welcome to my Software Engineering Portfolio 🚀 "],
+                    pauseFor: 5000,
                     
                 }}
                 />
