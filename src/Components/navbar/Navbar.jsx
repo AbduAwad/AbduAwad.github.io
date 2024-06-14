@@ -7,14 +7,13 @@ const Navbar = () => {
     <nav className='container'>
       <div className='logo-container'>
         <img src={logo} alt="" className='logo' />
-        <span className='name'>Abdulrahman Awad</span>
+        <span className='name'>Abdulrahman Awad Personal Portfolio</span>
       </div>
       <ul>
         <li>Home</li>
         <li>About</li>
         <li>Projects</li>
         <li>Work Experience</li>
-        <li><button className='btn'>Contact</button></li>
       </ul>
     </nav>
   );

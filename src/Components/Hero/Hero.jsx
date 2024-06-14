@@ -1,13 +1,15 @@
 import React from 'react'
 import './Hero.css'
-import videoBg from '../../assets/videoBg.mp4'
-import rightArrow from '../../assets/right_arrow.png'
-import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect'
+
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Hero = () => {
   return (
     <div className='hero'>
-        <video src={videoBg} autoPlay loop muted/>
         <div className='content'>
             <h1>Abdulrahman Awad</h1>
             <p>
@@ -16,13 +18,33 @@ const Hero = () => {
                     autoStart: true,
                     loop: true,
                     delay: 60,
-                    strings: ["Hi, Welcome to my Software Engineering Portfolio 🚀 "],
-                    pauseFor: 5000,
-                    
+                    strings: ["Hi, Welcome to my Software Engineering Portfolio 🚀!"],
+                    pauseFor: 6000,
                 }}
                 />
             </p>
-            {/* <button className='btn'>About<img src={rightArrow} alt=''></img></button> */}
+            <div className='social-icons'>
+              <a href='https://www.linkedin.com/in/abdulrahmansawad'>
+                <div className = 'linkedin'>
+                  <LinkedInIcon />
+                </div>
+              </a>
+              <div className = 'github'>
+                <a href='https://github.com/AbduAwad'> 
+                  <GitHubIcon />
+                </a>
+              </div>
+              <div className = 'email'>
+                <a href = 'mailto: abdulrahmansawad@gmail.com'>
+                 <EmailIcon />
+                </a>
+              </div>
+                <a href='https://www.instagram.com/_abduawad'>
+                  <div className = 'instagram'>
+                    <InstagramIcon />
+                  </div>
+                </a>
+            </div>
         </div>
     </div>
   )

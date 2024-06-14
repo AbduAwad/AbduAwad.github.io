@@ -3,36 +3,48 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: relative;
     overflow: hidden;
-}
-  
-.hero video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
 }
 
 .content {
     max-width: 600px; /* Adjust the width as needed */
     width: 100%;
-    text-align: left;
     padding: 20px;
     box-sizing: border-box;
 }
   
 h1 {
+    justify-content: center; /* Center the icons horizontally */
     margin: 0;
     font-size: 50px;
     color: white;
 }
   
 p {
+    justify-content: center; /* Center the icons horizontally */
     margin: 20px 0;
     color : white;
     font-size: 20px;
+}
+
+/* Container for the social icons */
+.social-icons {
+    display: flex; /* Align the icons in a row */
+    gap: 15px; /* Space between the icons */
+    padding: 10px; /* Padding around the icons */
+    justify-content: center; /* Center the icons horizontally */
+    margin-left: -70px; /* Move the container left by 10 pixels (adjust as needed) */
+}
+  
+/* Style for individual icons */
+.social-icons svg {
+    width: 40px; /* Set the width of the icons */
+    height: 40px; /* Set the height of the icons */
+    fill: #e4405f; /* Default color for the icons */
+    transition: fill 0.3s ease; /* Smooth transition for hover effect */
+}
+  
+  /* Hover effect for the icons */
+.social-icons svg:hover {
+    fill: #fff; /* Change color on hover (example: LinkedIn blue) */
 }

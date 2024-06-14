@@ -91,3 +91,11 @@ _____
 ```bash
 cd <project-name>
 ```
+
+### Material UI
+
+- Material-UI is a simple and customizable component library to build faster, beautiful, and more accessible React applications.
+
+```bash
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+```

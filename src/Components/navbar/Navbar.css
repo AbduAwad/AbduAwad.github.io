@@ -10,25 +10,29 @@ nav{
     align-items: center; /* aligns content vertically */
     justify-content: space-between; /* aligns content horizontally */
     z-index: 10; /* z-index is used to stack elements on top of each other */
+    padding-top: 20px; /* padding */
  }
 
 .logo-container{
     display: flex; /* displays content side by side */
     align-items: center; /* aligns content vertically */
-    margin-left: 10px; /* margin */
+    margin-left: -200px; /* margin */
 }
 
-.logo{
+.logo {
     width : 30px; /* width of the logo */
     height: auto;
 }
 
+nav ul {
+    margin-right: -225px;
+
+}
 nav ul li {
     display: inline-block; /* displays content side by side*/
     list-style: none; /* removes the bullet points */
     margin: 5px 20px; /* margin */
     font-size: 18px; 
-
 }
 
 .name {
