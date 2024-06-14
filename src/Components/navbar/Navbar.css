@@ -17,6 +17,7 @@ nav{
     display: flex; /* displays content side by side */
     align-items: center; /* aligns content vertically */
     margin-left: -200px; /* margin */
+    font-size: 15px;
 }
 
 .logo {
@@ -32,7 +33,7 @@ nav ul li {
     display: inline-block; /* displays content side by side*/
     list-style: none; /* removes the bullet points */
     margin: 5px 20px; /* margin */
-    font-size: 18px; 
+    font-size: 15px; 
 }
 
 .name {
