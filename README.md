@@ -99,3 +99,25 @@ cd <project-name>
 ```bash
 npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 ```
+
+### Deploy
+
+- Deploy the project to GitHub Pages
+
+1. Install gh-pages
+```bash
+npm install gh-pages
+```
+
+2. Add the following scripts to the package.json file
+```json
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+}
+```
+
+3. Deploy the project
+```bash
+npm run deploy
+```
