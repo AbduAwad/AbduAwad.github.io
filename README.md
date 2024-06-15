@@ -91,6 +91,7 @@ _____
 ```bash
 cd <project-name>
 ```
+______
 
 ### Material UI
 
@@ -99,6 +100,7 @@ cd <project-name>
 ```bash
 npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 ```
+_____
 
 ### Deploy
 

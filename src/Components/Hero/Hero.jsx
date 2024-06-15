@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div id='home' className='hero'>
         <div className='content'>
-            <h1>Abdulrahman Awad!</h1>
+            <h1>Abdulrahman Awad</h1>
             <p>
                 <Typewriter
                 options={{
