@@ -16,24 +16,30 @@ nav{
 .logo-container{
     display: flex; /* displays content side by side */
     align-items: center; /* aligns content vertically */
-    margin-left: -200px; /* margin */
+    margin-left: -100px; /* margin */
     font-size: 15px;
 }
 
 .logo {
     width : 30px; /* width of the logo */
-    height: auto;
 }
 
 nav ul {
-    margin-right: -225px;
-
+    margin-right: -125px;
 }
+
 nav ul li {
     display: inline-block; /* displays content side by side*/
-    list-style: none; /* removes the bullet points */
     margin: 5px 20px; /* margin */
     font-size: 15px; 
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    color: #e4405f; /* color on hover */
+    font-weight: bold;
+    transform: scale(1.15);
+    font-weight: 600;
 }
 
 .name {

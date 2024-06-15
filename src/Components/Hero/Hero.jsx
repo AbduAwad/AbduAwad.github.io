@@ -9,7 +9,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div id='home' className='hero'>
         <div className='content'>
             <h1>Abdulrahman Awad</h1>
             <p>
