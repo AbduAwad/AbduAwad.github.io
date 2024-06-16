@@ -1,0 +1,52 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap : 50px;
+}
+
+.mywork-title {
+    position : relative;
+}
+
+.mywork-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.mywork-container img {
+  box-sizing: border-box;
+  width: 419px;
+  height: 280px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mywork-container img:hover {
+    transform: scale(1.10);
+    border: 4px;
+    background: linear-gradient(264deg,#fd267d, #ff7854);
+    padding: 3px;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+
+  .mywork-showmore {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.5s;
+    cursor: pointer;
+    gap: 15px;
+  }
+
+  .arrow-outward-icon {
+    font-size: 20px;
+    color: white;
+  }
