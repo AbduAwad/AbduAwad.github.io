@@ -4,7 +4,8 @@ import Hero from './Components/Hero/Hero.jsx'
 import About from './Components/About/About.jsx'
 import videoBg from './assets/videoBg.mp4'
 import MyProjects from './Components/MyProjects/MyProjects.jsx'
-
+import Work from './Components/Work/Work.jsx'
+import Contact from './Components/Contact/Contact.jsx'
 const App = () => {
   return (
     <div className='container'>
@@ -13,6 +14,8 @@ const App = () => {
       <Hero/>
       <About/>
       <MyProjects/>
+      <Work/>
+      <Contact/>
     </div>
   )
 }

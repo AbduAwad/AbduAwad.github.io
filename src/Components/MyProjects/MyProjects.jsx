@@ -57,7 +57,7 @@ const ProjectData = [
     w_no: 2,
     w_name: 'Personalised A.I Chatbot',
     w_img: project2_img,
-    w_description: 'Integrating the OpenAI API and LangChain LLM to allow users to a personal A.I chatbot by inputting personal data',
+    w_description: 'Integrating the OpenAI API and LangChain LLM to allow users to train a personal A.I chatbot with personal data',
     w_link: 'https://PrivateRepository.com/project2'
   },
   {
