@@ -6,6 +6,7 @@
     gap : 30px;
     margin: 0 auto;
     padding: 20px;
+    margin-bottom: 60px;
 }
 
 .about-title h1 {
@@ -72,12 +73,12 @@
     flex-direction: column;
     align-items: center;
     gap: 0px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .about-acheivement:hover {
     transform: scale(1.10);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .about-acheivement h1 {

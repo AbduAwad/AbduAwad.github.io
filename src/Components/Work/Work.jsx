@@ -31,9 +31,9 @@ const Work = () => {
 const WorkData = [
   {
     w_no: 1,
-    w_name: 'Delivery Automation Software Developer Intern',
+    w_name: 'Network Automation Software Engineer Intern',
     w_img: work1_img,
-    w_description: 'April 2023 - September 2023',
+    w_description: 'April 2024 - September 2024',
   },
   {
     w_no: 2,
@@ -43,10 +43,12 @@ const WorkData = [
   },
   {
     w_no: 3,
-    w_name: 'Network Automation Software Engineer Intern',
+    w_name: 'Delivery Automation Software Developer Intern',
     w_img: work3_img,
-    w_description: 'April 2024 - September 2024',
+    w_description: 'April 2023 - September 2023',
   }
+
+
 ];
 
 export default Work

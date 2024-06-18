@@ -20,7 +20,6 @@ const MyProjects = () => {
         {ProjectData.map((work, index) => {
           return (
             <div className="project-card">
-              
               <img key={index} src={work.w_img} alt={work.w_name} />
               <div className="project-overlay">
                 <h2>{work.w_name}</h2>

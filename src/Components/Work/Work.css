@@ -1,35 +1,37 @@
 .work {
+  margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 50px;
-}
+    margin-bottom: 400px;
+  }
   
-
-.mywork-title {
+  .work-title {
     position: relative;
-}
-
-.work-container {
+  }
+  
+  .work-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    margin-bottom: 80px;
   }
-
+  
   .project-card {
     position: relative;
     width: 419px;
-    height: 250px;
+    height: 280px;
     overflow: hidden;
   }
+
+  
   .project-card img {
     width: 100%;
     height: 100%;
     transition: transform 0.3s;
   }
-
+  
   .project-overlay {
     position: absolute;
     bottom: 0;
@@ -47,3 +49,70 @@
     text-align: center;
     padding: 20px;
   }
+  
+  .project-overlay h2 {
+    margin: 0 0 20px; /* Add bottom margin for spacing */
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .project-overlay p {
+    margin: 0 0 30px; /* Add bottom margin for spacing */
+    font-size: 16px;
+    font-weight: 600;
+    color: #cccccc;
+  }
+  
+  .project-overlay a {
+    text-decoration: none;
+  }
+  
+  .project-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .project-button:hover {
+    background: linear-gradient(264deg,#fd267d, #ff7854);
+  }
+
+  .project-card:hover img {
+    transform: scale(1.10);
+  }
+  
+  .project-card:hover .project-overlay {
+    opacity: 1;
+  }
+  
+.mywork-showmore {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: gap 0.5s;
+    cursor: pointer;
+    gap: 15px;
+}
+  
+.arrow-outward-icon {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.mywork-showmore:hover {
+    gap: 30px;
+}
+  
