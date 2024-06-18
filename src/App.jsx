@@ -6,6 +6,7 @@ import videoBg from './assets/videoBg.mp4'
 import MyProjects from './Components/MyProjects/MyProjects.jsx'
 import Work from './Components/Work/Work.jsx'
 import Contact from './Components/Contact/Contact.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 const App = () => {
   return (
     <div className='container'>
@@ -16,6 +17,7 @@ const App = () => {
       <MyProjects/>
       <Work/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }

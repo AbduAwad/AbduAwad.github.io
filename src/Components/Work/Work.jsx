@@ -7,7 +7,7 @@ import work3_img from '../../assets/work3.jpg'
 
 const Work = () => {
   return (
-    <div className='work'>
+    <div id='work' className='work'>
       <div className="work-title">
         <h1>Work Experience</h1>
       </div>

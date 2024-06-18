@@ -46,3 +46,13 @@ nav ul li:hover {
     margin-left: 10px;
     height: auto;
 }
+
+.nav-menu li {
+    gap: 5px;
+    cursor: pointer;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}

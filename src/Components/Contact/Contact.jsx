@@ -7,7 +7,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id='contact' className="contact">
         <div className="contact-title">
             <h1>Get In Touch</h1>
         </div>
