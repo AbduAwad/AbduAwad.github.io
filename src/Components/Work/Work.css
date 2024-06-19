@@ -116,3 +116,13 @@
     gap: 30px;
 }
   
+
+@media(max-width: 768px) {
+  .work-container {
+    grid-template-columns: 1fr;
+  }
+
+  .work-title h1 {
+    font-size: 40px;
+  }
+}

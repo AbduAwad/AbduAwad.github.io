@@ -6,6 +6,33 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Contact = () => {
+
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "f85f779a-b2d7-4a95-bd42-d7140f409698");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        alert(data.message)
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    };
+
   return (
     <div id='contact' className="contact">
         <div className="contact-title">
@@ -33,7 +60,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="contact-right">
+            <form onSubmit={onSubmit} className="contact-right">
                 <label htmlFor="">Your Name</label>
                 <input type="text" placeholder="Enter your name" name='name'/>
                 <label htmlFor="">Your Email</label>
@@ -41,7 +68,7 @@ const Contact = () => {
                 <label htmlFor="">Your Message</label>
                 <textarea name="message" rows="8" placeholder="Enter your message"></textarea>
                 <button type='submit' className='contact-submit'>Submit Message</button>
-            </div>    
+            </form>    
         </div>
     </div>
   )

@@ -52,7 +52,11 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-.anchor-link {
-    text-decoration: none;
-    color: white;
+@media(max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .logo-container {
+        display: none;
+    }
 }

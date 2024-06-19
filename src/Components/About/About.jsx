@@ -14,8 +14,10 @@ const About = () => {
                     <p>
                         Hello! I'm Abdulrahman Awad, a dedicated and passionate software developer based in Ottawa, Ontario. 
                         Currently pursuing a Bachelor of Computer Science Honours with a minor in mathematics at Carleton University, 
-                        I am specializing in A.I and Machine Learning and look to delve deeper into the field of Artificial Intellegence 
-                        and Machine Learning through real world applications. Below are my most used languages.
+                    </p>
+                    <p>
+                    I am specializing in A.I and Machine Learning and look to delve deeper into the field of Artificial Intellegence 
+                    and Machine Learning through real world applications. Below are my most used languages.
                     </p>
                 </div>
                 <div className='about-skills'>

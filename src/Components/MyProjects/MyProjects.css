@@ -20,8 +20,8 @@
   
   .project-card {
     position: relative;
-    width: 419px;
-    height: 280px;
+    width: 319px;
+    height: 180px;
     overflow: hidden;
   }
 
@@ -116,3 +116,12 @@
     gap: 30px;
 }
   
+@media(max-width: 768px) {
+  .mywork-container {
+    grid-template-columns: 1fr;
+  }
+
+  .mywork-title h1 {
+    font-size: 40px;
+  }
+}
