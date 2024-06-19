@@ -38,7 +38,7 @@
     display: flex;
     gap: 40px;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .about-skill:hover {
@@ -73,12 +73,12 @@
     flex-direction: column;
     align-items: center;
     gap: 0px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .about-acheivement:hover {
     transform: scale(1.10);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .about-acheivement h1 {

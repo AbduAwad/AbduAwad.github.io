@@ -41,7 +41,7 @@ p {
     width: 40px; /* Set the width of the icons */
     height: 40px; /* Set the height of the icons */
     fill: #e4405f; /* Default color for the icons */
-    transition: fill 0.3s ease; /* Smooth transition for hover effect */
+    transition: fill 0.2s ease; /* Smooth transition for hover effect */
 }
   
   /* Hover effect for the icons */

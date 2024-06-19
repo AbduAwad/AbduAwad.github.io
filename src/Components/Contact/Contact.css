@@ -99,12 +99,12 @@
     padding: 20px 60px;
     margin-bottom: 50px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .contact-submit:hover {
     transform: scale(1.10);
-    transition: 0.3s;
+    transition: 0.2s;
     background: linear-gradient(264deg,#fd267d, #ff7854);
 }
 
