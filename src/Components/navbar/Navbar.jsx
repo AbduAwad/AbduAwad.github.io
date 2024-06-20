@@ -37,7 +37,7 @@ const Navbar = () => {
             <AnchorLink className='anchor-link' offset={50} href="#work" onClick={() => setMenu(false)}>Experience</AnchorLink>
           </li>
           <li>
-            <a href ='public/Abdulrahman_Awad_Resume.pdf' className='anchor-link' download>Resume</a>
+            <a href ='/Abdulrahman_Awad_Resume.pdf' className='anchor-link' download>Resume</a>
           </li>
           <li>
             <AnchorLink className='anchor-link' offset={50} href="#contact" onClick={() => setMenu(false)}>Contact</AnchorLink>
