@@ -24,15 +24,15 @@
     display: inline-block; /* displays content side by side*/
     margin: 20px 15px; /* margin */
     font-size: 20px; 
-    font-weight: 500;
+    transition: background-color 0.2s;
+    padding: 8px 10px; /* Adjust padding for larger background area */
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .navbar ul li:hover {
-    color: #e4405f; /* color on hover */
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: #e4405f;
-    text-underline-offset: 12px;
+    /* color: #e4405f; color on hover */
+    background-color: #e4405f; /* background color on hover */
     transition: 0.2s;
 }
 
@@ -50,7 +50,7 @@
     display: none;
 }
 
-@media(max-width: 650px) {
+@media(max-width: 780px) {
 
     .navbar {
         margin: 20px 50px;
