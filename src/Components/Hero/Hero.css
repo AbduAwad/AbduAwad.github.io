@@ -38,8 +38,8 @@ p {
   
 /* Style for individual icons */
 .social-icons svg {
-    width: 40px; /* Set the width of the icons */
-    height: 40px; /* Set the height of the icons */
+    width: 50px; /* Set the width of the icons */
+    height: 50px; /* Set the height of the icons */
     fill: #e4405f; /* Default color for the icons */
     transition: fill 0.2s ease; /* Smooth transition for hover effect */
 }
@@ -47,6 +47,7 @@ p {
   /* Hover effect for the icons */
 .social-icons svg:hover {
     fill: #fff; /* Change color on hover (example: LinkedIn blue) */
+    scale: 1.10;
 }
 
 
