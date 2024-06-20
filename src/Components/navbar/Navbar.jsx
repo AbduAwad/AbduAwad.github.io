@@ -25,20 +25,24 @@ const Navbar = () => {
         <ul className='nav-menu' style={{ right: menu ? "0" : "-160px" }}>
           <img src={menu_close} onClick={toggleMenu} ref={menuRef} />
           <li>
-            <AnchorLink className='anchor-link' offset={50} href="#home" onClick={() => setMenuOpen(false)}>Home</AnchorLink>
+            <AnchorLink className='anchor-link' offset={50} href="#home" onClick={() => setMenu(false)}>Home</AnchorLink>
           </li>
           <li>
-            <AnchorLink className='anchor-link' offset={50} href="#about" onClick={() => setMenuOpen(false)}>About</AnchorLink>
+            <AnchorLink className='anchor-link' offset={50} href="#about" onClick={() => setMenu(false)}>About</AnchorLink>
           </li>
           <li>
-            <AnchorLink className='anchor-link' offset={50} href="#projects" onClick={() => setMenuOpen(false)}>Projects</AnchorLink>
+            <AnchorLink className='anchor-link' offset={50} href="#projects" onClick={() => setMenu(false)}>Projects</AnchorLink>
           </li>
           <li>
-            <AnchorLink className='anchor-link' offset={50} href="#work" onClick={() => setMenuOpen(false)}>Experience</AnchorLink>
+            <AnchorLink className='anchor-link' offset={50} href="#work" onClick={() => setMenu(false)}>Experience</AnchorLink>
           </li>
           <li>
-            <AnchorLink className='anchor-link' offset={50} href="#contact" onClick={() => setMenuOpen(false)}>Contact</AnchorLink>
+            <a href ='public/Abdulrahman_Awad_Resume.pdf' className='anchor-link' download>Resume</a>
           </li>
+          <li>
+            <AnchorLink className='anchor-link' offset={50} href="#contact" onClick={() => setMenu(false)}>Contact</AnchorLink>
+          </li>
+  
         </ul>
       </div>
     </nav>

@@ -22,7 +22,7 @@
 
 .navbar ul li {
     display: inline-block; /* displays content side by side*/
-    margin: 5px 20px; /* margin */
+    margin: 20px 15px; /* margin */
     font-size: 20px; 
     font-weight: 500;
 }
@@ -50,7 +50,7 @@
     display: none;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 650px) {
 
     .navbar {
         margin: 20px 50px;
