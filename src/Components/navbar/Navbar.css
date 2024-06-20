@@ -1,4 +1,5 @@
-nav{
+
+.nav-container {
     width: 100%; /* width of the nav bar */
     background:  transparent; /* background color */
     color: white; /* text color */
@@ -7,56 +8,89 @@ nav{
     top: 0; /* nav bar will be fixed to the top at 0 */
     left: 0; /* nav bar will be fixed to the left at 0 */
     display: flex; /* displays content side by side */
-    align-items: center; /* aligns content vertically */
-    justify-content: space-between; /* aligns content horizontally */
+    align-items: right; /* aligns content vertically */
+    justify-content: right; /* aligns content horizontally */
     z-index: 10; /* z-index is used to stack elements on top of each other */
     padding-top: 20px; /* padding */
  }
 
-.logo-container{
-    display: flex; /* displays content side by side */
-    align-items: center; /* aligns content vertically */
-    margin-left: -100px; /* margin */
-    font-size: 15px;
+
+
+.navbar ul {
+    margin-right: 25px;
 }
 
-.logo {
-    width : 30px; /* width of the logo */
-}
-
-nav ul {
-    margin-right: -125px;
-}
-
-nav ul li {
+.navbar ul li {
     display: inline-block; /* displays content side by side*/
     margin: 5px 20px; /* margin */
-    font-size: 15px; 
+    font-size: 20px; 
     font-weight: 500;
 }
 
-nav ul li:hover {
+.navbar ul li:hover {
     color: #e4405f; /* color on hover */
-    font-weight: bold;
-    transform: scale(1.15);
     font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #e4405f;
+    text-underline-offset: 12px;
+    transition: 0.2s;
 }
 
-.name {
-    margin-left: 10px;
-    height: auto;
-}
 
 .nav-menu li {
     gap: 5px;
     cursor: pointer;
 }
 
-@media(max-width: 768px) {
+.nav-menu img {
+    display: none;
+}
+
+.navbar img {
+    display: none;
+}
+
+@media(max-width: 600px) {
+
     .navbar {
-        display: none;
+        margin: 20px 50px;
+        flex-direction: column;
     }
-    .logo-container {
-        display: none;
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0px;
+        bottom: 0;
+        width: 150px;
+        height: 100%;
+        transition: 0.2s;
+        z-index: 10;
+        background-color: black;
+        list-style-type: none; /* Remove default list styles */   
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 25px 40px;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .navbar img {
+        display: block;
+        position: fixed;
+        right: 40px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .nav-menu img {
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 20px;
+        cursor: pointer;
+        padding-top: 30px;
     }
 }

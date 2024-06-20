@@ -116,9 +116,19 @@
     gap: 30px;
 }
   
-@media(max-width: 768px) {
+@media(max-width: 900px) {
   .mywork-container {
     grid-template-columns: 1fr;
+  }
+
+  .mywork-title h1 {
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 1350px) and (min-width: 900px) {
+  .mywork-container {
+    grid-template-columns: 1fr 1fr;
   }
 
   .mywork-title h1 {

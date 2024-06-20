@@ -117,9 +117,20 @@
 }
   
 
-@media(max-width: 768px) {
+@media(max-width: 900px) {
   .work-container {
     grid-template-columns: 1fr;
+  }
+
+  .work-title h1 {
+    font-size: 40px;
+  }
+}
+
+
+@media(max-width: 1350px) and (min-width: 900px) {
+  .work-container {
+    grid-template-columns: 1fr 1fr;
   }
 
   .work-title h1 {

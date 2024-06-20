@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import aboutImg from '../../assets/compImg.png'
+import menu_close from '../../assets/menu_close.png'
 const About = () => {
   return (
     
