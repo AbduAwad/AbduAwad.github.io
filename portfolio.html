@@ -50,16 +50,136 @@
       --ease: cubic-bezier(0.16, 1, 0.3, 1);
     }
 
+    /* ---- Dark Mode Variables ---- */
+    html[data-theme="dark"] {
+      --bg-page: #0B1120;
+      --bg-white: #131A2B;
+      --bg-subtle: #1A2332;
+      --text-primary: #E8ECF1;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+      --border: #1E293B;
+      --border-hover: #334155;
+      --shadow-sm: 0 2px 5px -1px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 6px 12px -2px rgba(0, 0, 0, 0.4), 0 3px 7px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 13px 27px -5px rgba(0, 0, 0, 0.5), 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+      --accent-light: rgba(99, 91, 255, 0.15);
+    }
+
+    /* ---- Video Background Overlay ---- */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: var(--bg-page);
+      transition: background 0.3s;
+      pointer-events: none;
+    }
+    html[data-theme="dark"] body::before {
+      background: transparent;
+    }
+
+    /* ---- Dark Mode Hardcoded Overrides ---- */
+    html[data-theme="dark"] .navbar.scrolled {
+      background: rgba(11, 17, 32, 0.85);
+    }
+    html[data-theme="dark"] .mobile-menu {
+      background: rgba(11, 17, 32, 0.97);
+    }
+    html[data-theme="dark"] .project-card--featured {
+      background: linear-gradient(135deg, rgba(99,91,255,0.1) 0%, rgba(0,212,255,0.08) 50%, rgba(255,107,138,0.08) 100%);
+    }
+    html[data-theme="dark"] .project-card--featured::after {
+      background: linear-gradient(135deg, rgba(99,91,255,0.1) 0%, rgba(0,212,255,0.08) 50%, rgba(255,107,138,0.08) 100%);
+    }
+    html[data-theme="dark"] .exp-card-image[style*="background-color: #f0f0f0"] {
+      background-color: #1A2332 !important;
+    }
+    html[data-theme="dark"] .skill-tile {
+      background: rgba(255,255,255,0.06) !important;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* ---- Theme Toggle Button ---- */
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: transparent;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      padding: 0;
+    }
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 8px rgba(99, 91, 255, 0.2);
+    }
+    .theme-toggle .material-symbols-rounded {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+    }
+    .theme-toggle:hover .material-symbols-rounded {
+      color: var(--accent);
+    }
+    /* Show/hide icons based on theme */
+    .theme-toggle .icon-dark { display: inline; }
+    .theme-toggle .icon-light { display: none; }
+    html[data-theme="dark"] .theme-toggle .icon-dark { display: none; }
+    html[data-theme="dark"] .theme-toggle .icon-light { display: inline; }
+
+    .mobile-theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+    }
+    .mobile-theme-toggle .material-symbols-rounded {
+      font-size: 1.4rem;
+      color: var(--text-secondary);
+    }
+    .mobile-theme-toggle .icon-dark { display: inline; }
+    .mobile-theme-toggle .icon-light { display: none; }
+    html[data-theme="dark"] .mobile-theme-toggle .icon-dark { display: none; }
+    html[data-theme="dark"] .mobile-theme-toggle .icon-light { display: inline; }
+
+    /* ---- Smooth Theme Transition ---- */
+    .theme-transition,
+    .theme-transition *,
+    .theme-transition *::before,
+    .theme-transition *::after {
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s, fill 0.3s !important;
+    }
+
     html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
     body {
       font-family: var(--font-body);
-      background: var(--bg-page);
+      background: #000;
       color: var(--text-secondary);
       line-height: 1.7;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Fixed space video background */
+    .video-bg {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; z-index: -2;
+      pointer-events: none;
     }
 
     /* Noise/grain texture overlay */
@@ -278,7 +398,7 @@
 
     /* ---- Hero ---- */
     .hero {
-      position: relative; min-height: 100vh; background: var(--bg-page);
+      position: relative; min-height: 100vh; background: transparent;
       display: flex; align-items: center;
       padding: calc(var(--nav-height) + 40px) 0 80px;
       overflow: hidden;
@@ -417,8 +537,8 @@
 
     /* ---- Logo Bar ---- */
     /* ---- Sections ---- */
-    .section-light { background: var(--bg-page); padding: 96px 0; }
-    .section-white { background: var(--bg-white); padding: 96px 0; }
+    .section-light { background: transparent; padding: 96px 0; }
+    .section-white { background: transparent; padding: 96px 0; }
 
     /* ---- Experience Carousel ---- */
     .exp-carousel-wrapper {
@@ -876,8 +996,20 @@
       .skill-tile img { width: 22px; height: 22px; }
     }
   </style>
+  <script>
+    // Anti-FOUC: set theme before first paint
+    (function() {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 <body>
+
+<video class="video-bg" autoplay loop muted playsinline aria-hidden="true">
+  <source src="videoBg.mp4" type="video/mp4">
+</video>
 
 <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
@@ -893,6 +1025,12 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact" class="navbar-cta">Contact</a></li>
+      <li>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="material-symbols-rounded icon-dark">dark_mode</span>
+          <span class="material-symbols-rounded icon-light">light_mode</span>
+        </button>
+      </li>
     </ul>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -907,6 +1045,10 @@
   <a href="#skills" onclick="closeMobile()">Skills</a>
   <a href="#education" onclick="closeMobile()">Education</a>
   <a href="#contact" onclick="closeMobile()">Contact</a>
+  <button class="mobile-theme-toggle" id="mobile-theme-toggle" aria-label="Toggle dark mode">
+    <span class="material-symbols-rounded icon-dark">dark_mode</span>
+    <span class="material-symbols-rounded icon-light">light_mode</span>
+  </button>
 </div>
 
 <main id="main">
@@ -1758,6 +1900,39 @@
     }, { passive: true });
   }
 
+  // ---- Theme Toggle ----
+  function getCanvasTextColor(alpha) {
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    return isDark ? 'rgba(232,236,241,' + alpha + ')' : 'rgba(10,37,64,' + alpha + ')';
+  }
+
+  function setTheme(theme) {
+    document.documentElement.classList.add('theme-transition');
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    setTimeout(function() {
+      document.documentElement.classList.remove('theme-transition');
+    }, 400);
+  }
+
+  function toggleTheme() {
+    var current = document.documentElement.getAttribute('data-theme');
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  }
+
+  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+  document.getElementById('mobile-theme-toggle').addEventListener('click', function() {
+    toggleTheme();
+    closeMobile();
+  });
+
+  // Listen for system preference changes (only when no stored preference)
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    if (!localStorage.getItem('theme')) {
+      setTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+
   // ---- Education Orbital Visualization ----
   (function() {
     var ec = document.getElementById('edu-canvas');
@@ -1905,7 +2080,7 @@
       // Hub label
       ectx.font = '700 28px Inter, system-ui, sans-serif';
       ectx.textAlign = 'center'; ectx.textBaseline = 'middle';
-      ectx.fillStyle = 'rgba(10,37,64,0.95)';
+      ectx.fillStyle = getCanvasTextColor(0.95);
       ectx.fillText('AI & ML', cx, cy - hubSz - 18);
 
       // Inner ring nodes
@@ -1942,7 +2117,7 @@
         if (lx > w - pad) lx = w - pad;
         if (ly < pad) ly = pad;
         if (ly > h - pad) ly = h - pad;
-        ectx.fillStyle = 'rgba(10,37,64,0.88)';
+        ectx.fillStyle = getCanvasTextColor(0.88);
         ectx.fillText(innerItems[i].label, lx, ly);
       }
 
@@ -1978,7 +2153,7 @@
         if (lx > w - pad) lx = w - pad;
         if (ly < pad) ly = pad;
         if (ly > h - pad) ly = h - pad;
-        ectx.fillStyle = 'rgba(10,37,64,0.72)';
+        ectx.fillStyle = getCanvasTextColor(0.72);
         ectx.fillText(outerItems[i].label, lx, ly);
       }
 
