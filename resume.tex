@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Zade Ammar
+% Based off of: Jake Gutierrez (https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{CormorantGaramond}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Abdulrahman Awad} \\ \vspace{7pt}
+    \small 613-410-8305 $|$ 
+    \href{mailto:abdulrahmansawad@gmail.com}{\underline{abdulrahmansawad@gmail.com}} $|$
+    \href{https://linkedin.com/in/abdulrahmansawad}{\underline{linkedin.com/in/abdulrahmansawad}} $|$
+    \href{https://github.com/AbduAwad}{\underline{github.com/AbduAwad}} \\
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Carleton University}{Ottawa, ON}
+    {Bachelor of Computer Science Honours, Artificial Intelligence and Machine Learning Stream}{Sep 2022 -- April 2026}
+    \resumeItemListStart
+      \resumeItem{\textbf{GPA:} 4.00/4.00 (A+)}
+      \resumeItem{\textbf{Awards:} Golden Key Society, Entrance Scholarship, 2022 - 2025 Deans’ Honour List.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages:} Python, Ruby on Rails, JavaScript, TypeScript, Java, Go, C, C++, SQL, HTML, CSS. \\
+     \textbf{Tools and Frameworks:} Linux, iOS, Bash, PyTorch, TensorFlow, Keras, Scikit-Learn, Pandas, Numpy, React, Node, LangChain. \\
+     \textbf{DevOps:} CI/CD, Git, GitHub, Gitlab, Graphite, Docker, GCP, AWS, Unit Testing, Integration Testing, End-to-end Testing. \\
+     \textbf{Certifications:} Nokia Certified Network Routing Specialist I.
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Shopify}{Sep 2025 -- Dec 2025}
+    {Software Engineer Intern}{Ottawa, ON}
+\resumeItemListStart
+\resumeItem{Built a \textbf{GraphQL API} enabling merchants to reverse scheduled cancellations, retaining an average of \textbf{280+} stores weekly.}
+\resumeItem{Integrated \textbf{Apple Pay} and \textbf{Google Pay} in Shopify's merchant checkout via \textbf{Stripe Express Pay Elements}, prototyping and developing the vaulting flow to enable faster checkout and increased conversion.}
+\resumeItem{Developed an \textbf{Observe dashboard} tracking \textbf{P90 latency}, API errors, and usage metrics across \textbf{1,000+} daily merchant sessions, reducing incident response time through real-time alerts.}
+
+\resumeItemListEnd
+
+  \resumeSubheading
+    {Nokia}{May 2025 -- Aug 2025}
+    {Automation Engineer Intern}{Ottawa, ON}
+    \resumeItemListStart
+      \resumeItem{Automated the release pipeline by building a \textbf{GitLab CI/CD} workflow that tested, packaged, and deployed a Go-based security agent, reducing release time by \textbf{90\%}.}
+      \resumeItem{Implemented an intelligent \textbf{auto-complete} feature in \textbf{Golang} for the CLI, decreasing SR Linux configuration time by \textbf{70\%} and preventing operator errors.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Carleton University}{Sep 2023 -- April 2025}
+    {Undergraduate Teaching Assistant for Data Structures and Algorithms}{Ottawa, ON}
+    \resumeItemListStart
+      \resumeItem{Designed \textbf{automated test suites} measuring runtime and correctness, ensuring accurate grading for \textbf{200+} submissions.}
+      \resumeItem{Led coding workshops for \textbf{100+} students, teaching algorithmic design patterns and data-driven problem solving.}
+      \resumeItem{Conducted \textbf{50+} code reviews, mentoring students in Python and Java best practices and writing clean, efficient code.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Nokia}{May 2024 -- Aug 2024}
+    {Software Engineer Intern}{Ottawa, ON}
+    \resumeItemListStart
+      \resumeItem{Developed a Workflow Manager \textbf{VSCode extension} in \textbf{TypeScript} to streamline workflow automation for \textbf{600+} engineers.}
+      \resumeItem{Reduced data retrieval latency from \textbf{100 ms → 0.001 ms} via an in-memory caching layer achieving \textbf{O(1)} lookup efficiency.}
+      \resumeItem{Integrated Nokia’s \textbf{Network Service Platform APIs} to enhance large-scale developer productivity within VSCode.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Nokia}{May 2023 -- Aug 2023}
+    {Automation Developer Intern}{Ottawa, ON}
+    \resumeItemListStart
+      \resumeItem{Created a \textbf{Python library} leveraging subprocess to automate command execution and validation on \textbf{Linux}, cutting runtime by \textbf{80\%}.}
+      \resumeItem{Built a distributed monitoring solution with \textbf{Collectd} and \textbf{Redis} for real-time telemetry of network performance metrics.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+      {\textbf{Git Merge Conflict Resolver - VSCode Extension} $|$ \emph{HuggingFace, PyTorch, TensorFlow, Keras, Scikit-Learn}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a Neural-Network-powered VSCode extension using a BiLSTM classifier and fine-tuned transformer to auto-resolve Python merge conflicts with \textbf{95\%} accuracy, replicating real-world Git workflows.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Carleton University AI Schedule Generator} $|$ \emph{Python, REST APIs, BeautifulSoup, Pandas}}{}
+      \resumeItemListStart
+        \resumeItem{Generated \textbf{100+} personalized course schedules using AI-based search heuristics, maintaining \textbf{100\%} compliance with registration constraints and preferences.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Neural Network Image Classifier} $|$ \emph{Python, PyTorch, TensorFlow, Pandas, Numpy}}{}
+      \resumeItemListStart
+        \resumeItem{Trained a hybrid \textbf{CNN + RNN} model for handwritten-digit classification, achieving \textbf{94\%} accuracy on test datasets.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
